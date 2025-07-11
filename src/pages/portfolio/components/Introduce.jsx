@@ -14,7 +14,7 @@ export default function Introduce() {
 					className="rounded-[50%] aspect-square w-4/5 max-w-[250px] border-2 shadow-md"
 				/>
 				<h1 className="font-bold text-[2rem] md:text-[3rem] text-primary my_name">
-					Hi, I'm Truong Pham
+					Hi, I'm Pham Phuc
 				</h1>
 				<p className="text-start">
 					Open to both freelance and long-term opportunities!
@@ -31,13 +31,13 @@ export default function Introduce() {
 					understanding and strategic vision to drive meaningful
 					impact.{' '}
 				</p>
-				<p className="sort_intro">📞 Phone: 0343241299</p>
+				<p className="sort_intro">📞 Phone: 0334526840</p>
 				<Link
 					to={'https://facebook.com/truongpham2412'}
 					target="_blank"
 					className="sort_intro"
 				>
-					<p>🔗 Facebook: https://facebook.com/truongpham2412</p>
+					<p>🔗 Facebook: https://www.facebook.com/phuc.pham.541673/</p>
 				</Link>
 			</div>
 			<Button
