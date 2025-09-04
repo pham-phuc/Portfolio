@@ -4,28 +4,24 @@ import { TypeAnimation } from 'react-type-animation'
 export default function Project() {
 	const items = [
 		{
-			name: 'Rapidprinttee',
+			name: 'TopCoach',
 			description:
-				'Rapidprinttee is a web application developed by a print-on-demand t-shirt workshop targeting the US market. Its core features focus on receiving and processing customer orders.',
+				'Developed to connect personal trainers with clients, helping manage and enhance the gym training experience.',
 			urls: [
-				'https://app.rapidprinttee.com',
-				'https://rapidprinttee.com'
+				'https://app.topcoach.se/',
+				'https://topcoach.joosdigital.com/'
 			],
 			image_url: '/project/1.png'
 		},
 		{
-			name: 'Eduquiz',
+			name: 'Ymner',
 			description:
-				'Eduquiz is a SaaS website that provides multiple-choice test preparation features for anyone looking to study and improve their memory.',
-			urls: ['https://eduquiz.vn'],
+				'A system designed to crawl data from multiple online sources, normalize and store it in a structured format, and provide intelligent search capabilities using natural language processing (NLP) and AI.',
+			urls: [
+				'https://www.ymner.com/sv/home',
+				'https://dev.ymner.com/'
+			],
 			image_url: '/project/2.png'
-		},
-		{
-			name: 'Ielts D1',
-			description:
-				'Ielts D1 is an educational blog managed by an English language teacher.',
-			urls: ['https://www.ieltsd1.com'],
-			image_url: '/project/3.png'
 		}
 	]
 	return (

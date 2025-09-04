@@ -18,22 +18,6 @@ export default function TechStack() {
 			image_url: '/tech_stack/react.png'
 		},
 		{
-			name: 'NextJS',
-			image_url: '/tech_stack/next.png'
-		},
-		{
-			name: 'ElectronJS',
-			image_url: '/tech_stack/electron.png'
-		},
-		{
-			name: 'NestJS',
-			image_url: '/tech_stack/nest.png'
-		},
-		{
-			name: 'Puppeteer',
-			image_url: '/tech_stack/puppeteer.png'
-		},
-		{
 			name: 'Ant Design UI',
 			image_url: '/tech_stack/antd.png'
 		},
@@ -50,16 +34,12 @@ export default function TechStack() {
 			image_url: '/tech_stack/tailwind.png'
 		},
 		{
-			name: 'MongoDB',
-			image_url: '/tech_stack/mongo.png'
+			name: 'Angular',
+			image_url: '/tech_stack/logo-angular-svgrepo-com.svg'
 		},
 		{
-			name: 'SQL',
-			image_url: '/tech_stack/sql.png'
-		},
-		{
-			name: 'Docker',
-			image_url: '/tech_stack/docker.png'
+			name: 'Styled components',
+			image_url: '/tech_stack/styled-components-svgrepo-com.svg'
 		}
 	]
 	return (
@@ -115,13 +95,13 @@ export function MyCV() {
 	function goToNextPage() {
 		setPageNumber(prev => Math.min(prev + 1, numPages))
 	}
-	const file = useMemo(() => ({ url: '/mycv.pdf' }), [])
+	const file = useMemo(() => ({ url: '/my_cv_2.pdf' }), [])
 
 	function downloadCV() {
 		toast.info('Đang tải CV ...')
 		const link = document.createElement('a')
-		link.href = '/mycv.pdf'
-		link.download = 'Pham_Van_Truong_React_Next_Nest_Developer_CV.pdf'
+		link.href = '/my_cv_2.pdf'
+		link.download = 'Pham_Van_Phuc_Front_End_Developer_CV.pdf'
 		document.body.appendChild(link)
 		link.click()
 		document.body.removeChild(link)

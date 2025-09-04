@@ -3,12 +3,15 @@ import { SquareArrowDown } from 'lucide-react'
 import { Link } from 'react-router-dom'
 
 export default function Introduce() {
+	const handleScroll = () => {
+		window.scrollTo({ top: window.innerHeight, behavior: 'smooth' });
+	};
 	return (
 		<div className="flex flex-col  items-center justify-center w-full h-screen relative bg-gradient-to-t from-black to-gray-200">
 			<div className="flex flex-col gap-3 items-center justify-center w-full max-w-2xl p-4 mx-auto text-center">
 				<img
 					id="avatar"
-					src="/avatar.png"
+					src="/avatar.jpg"
 					title="Avatar"
 					alt="avatar"
 					className="rounded-[50%] aspect-square w-4/5 max-w-[250px] border-2 shadow-md"
@@ -33,7 +36,7 @@ export default function Introduce() {
 				</p>
 				<p className="sort_intro">📞 Phone: 0334526840</p>
 				<Link
-					to={'https://facebook.com/truongpham2412'}
+					to={'https://www.facebook.com/phuc.pham.541673/'}
 					target="_blank"
 					className="sort_intro"
 				>
@@ -41,11 +44,13 @@ export default function Introduce() {
 				</Link>
 			</div>
 			<Button
-				className="absolute animate-bounce bottom-0"
+				className="absolute animate-bounce bottom-0 p-2"
 				variant="outline"
 				size="lg"
+				onClick={handleScroll}
+
 			>
-				<SquareArrowDown /> Scroll to see detail
+				<SquareArrowDown /> Scroll to see details
 			</Button>
 		</div>
 	)
