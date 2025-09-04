@@ -40,6 +40,22 @@ export default function TechStack() {
 		{
 			name: 'Styled components',
 			image_url: '/tech_stack/styled-components-svgrepo-com.svg'
+		},
+		{
+			name: 'JavaScript',
+			image_url: '/tech_stack/javascript.svg'
+		},
+		{
+			name: 'TypeScript',
+			image_url: '/tech_stack/typescript.svg'
+		},
+		{
+			name: 'Cypress automating testing',
+			image_url: '/tech_stack/Cypress-Icon.svg'
+		},
+		{
+			name: 'Gitlab',
+			image_url: '/tech_stack/gitlab.svg'
 		}
 	]
 	return (
@@ -112,7 +128,7 @@ export function MyCV() {
 
 	return (
 		<div className="flex flex-col items-center gap-4  relative">
-			<div className="flex justify-center gap-2 items-center absolute z-[1] -bottom-10">
+			<div className="flex justify-center gap-2 items-center absolute z-[1] -bottom-[3rem]">
 				<Button onClick={goToPrevPage} disabled={pageNumber <= 1}>
 					<MoveLeft />
 				</Button>

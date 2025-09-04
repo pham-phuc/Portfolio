@@ -4,8 +4,9 @@ import { Link } from 'react-router-dom'
 
 export default function Introduce() {
 	const handleScroll = () => {
-		window.scrollTo({ top: window.innerHeight, behavior: 'smooth' });
-	};
+		window.scrollBy({ top: window.innerHeight, behavior: 'smooth' })
+	}
+
 	return (
 		<div className="flex flex-col  items-center justify-center w-full h-screen relative bg-gradient-to-t from-black to-gray-200">
 			<div className="flex flex-col gap-3 items-center justify-center w-full max-w-2xl p-4 mx-auto text-center">
@@ -40,7 +41,9 @@ export default function Introduce() {
 					target="_blank"
 					className="sort_intro"
 				>
-					<p>🔗 Facebook: https://www.facebook.com/phuc.pham.541673/</p>
+					<p>
+						🔗 Facebook: https://www.facebook.com/phuc.pham.541673/
+					</p>
 				</Link>
 			</div>
 			<Button
@@ -48,7 +51,6 @@ export default function Introduce() {
 				variant="outline"
 				size="lg"
 				onClick={handleScroll}
-
 			>
 				<SquareArrowDown /> Scroll to see details
 			</Button>

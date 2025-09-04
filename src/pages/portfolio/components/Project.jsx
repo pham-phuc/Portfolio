@@ -9,19 +9,21 @@ export default function Project() {
 				'Developed to connect personal trainers with clients, helping manage and enhance the gym training experience.',
 			urls: [
 				'https://app.topcoach.se/',
-				'https://topcoach.joosdigital.com/'
 			],
-			image_url: '/project/1.png'
+			image_url: [
+				'/project/Project_top_coach_1.png',
+				'/project/Project_top_coach_2.png'
+			]
 		},
 		{
 			name: 'Ymner',
 			description:
 				'A system designed to crawl data from multiple online sources, normalize and store it in a structured format, and provide intelligent search capabilities using natural language processing (NLP) and AI.',
-			urls: [
-				'https://www.ymner.com/sv/home',
-				'https://dev.ymner.com/'
-			],
-			image_url: '/project/2.png'
+			urls: ['https://www.ymner.com/sv/home',],
+			image_url: [
+				'/project/Project_ymner_1.png',
+				'/project/Project_ymner_2.png'
+			]
 		}
 	]
 	return (
@@ -47,20 +49,29 @@ export default function Project() {
 									}}
 									repeat={false}
 								/>
-								<div className="flex gap-4 flex-wrap ">
+								<div className="flex gap-4 flex-wrap mt-4">
 									{item.urls.map(u => (
-										<Link
-											to={u}
-											target="_blank"
+										<button
 											key={u}
-											className="underline text-blue-600"
+											className="text-blue-600 px-2 py-1 border border-blue-600 rounded hover:bg-blue-50 hover:underline transition"
+											onClick={() => window.open(u, '_blank')}
+											type="button"
 										>
-											{u}
-										</Link>
+											Relate app
+										</button>
 									))}
 								</div>
 							</div>
-							<img alt="1" src={item.image_url} />{' '}
+							<div className="flex direction-row flex-wrap gap-0 justify-center items-center">
+								{item.image_url.map((img, idx) => (
+									<img
+										key={idx}
+										alt={`Project ${item.name} - ${idx + 1}`}
+										src={img}
+										className=" h-[15.625rem] w-[31.25rem]"
+									/>
+								))}
+							</div>
 						</div>
 					)
 				})}
