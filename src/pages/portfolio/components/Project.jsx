@@ -34,7 +34,7 @@ export default function Project() {
 			<div className="py-12 max-w-[1200px] mx-auto container_project">
 				{items.map((item, index) => {
 					return (
-						<div className="grid md:gap-24 lg:grid-cols-2 container_item h-[80vh] max-w-[90%] mx-auto">
+						<div className="grid md:gap-24 lg:grid-cols-2 container_item mb-[3.75rem] max-w-[90%] mx-auto">
 							<div className="flex justify-center flex-col ">
 								<h3 className="font-bold text-[2rem] md:text-[3rem]">
 									{item.name}
@@ -62,7 +62,7 @@ export default function Project() {
 									))}
 								</div>
 							</div>
-							<div className="flex direction-row flex-wrap gap-0 justify-center items-center">
+							<div className="flex direction-row flex-wrap gap-[1rem] justify-center items-center">
 								{item.image_url.map((img, idx) => (
 									<img
 										key={idx}
